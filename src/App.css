@@ -1,0 +1,234 @@
+body {
+  background-color: #ececee;
+  font-family: "Manrope", Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  border: 1px solid black;
+  width: 50%;
+  margin: 0 auto; /* centers the div horizontally */
+  text-align: center; /* centers the content of the div horizontally */
+}
+.left-align {
+  border: 1px solid black;
+  width: 25%;
+  margin: 0 auto; /* centers the div horizontally */
+  /* text-align: center; centers the content of the div horizontally */
+}
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #eaeaea;
+  border-radius: 20px;
+}
+.progress-bar {
+  height: 100%;
+  background-color: #6c85e0;
+  border-radius: 20px;
+  padding-top: 2px;
+}
+.hide {
+  display: none;
+  width: 100%;
+  position: fixed;
+  background-color: #fbfbfb;
+  opacity: 1;
+  -webkit-filter: blur(1);
+  z-index: 999;
+}
+
+img {
+  /*filter: brightness(50%);*/
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+}
+
+.card-title {
+  color: #514b8c;
+  font-weight: 600;
+}
+
+.ag-header-row {
+  background: #ece9f4;
+}
+
+span.ag-header-cell-text {
+  font-size: 1.05rem;
+}
+
+.ag-theme-material {
+  --ag-material-primary-color: #3f51b5;
+  --ag-material-accent-color: #ff4081;
+  --ag-foreground-color: rgba(0, 0, 0, 0.87);
+  --ag-secondary-foreground-color: rgba(0, 0, 0, 0.54);
+  --ag-disabled-foreground-color: rgba(0, 0, 0, 0.38);
+  --ag-background-color: #fff;
+  --ag-header-background-color: #fff;
+  --ag-tooltip-background-color: #fff;
+  --ag-subheader-background-color: #eee;
+  --ag-subheader-toolbar-background-color: rgba(238, 238, 238, 0.5);
+  --ag-header-cell-hover-background-color: #f2f2f2;
+  --ag-chip-background-color: #e2e2e2;
+  --ag-range-selection-background-color: rgba(122, 134, 203, 0.1);
+  --ag-range-selection-background-color-2: rgba(122, 134, 203, 0.19);
+  --ag-range-selection-background-color-3: rgba(122, 134, 203, 0.27);
+  --ag-range-selection-background-color-4: rgba(122, 134, 203, 0.34);
+  --ag-range-selection-highlight-color: #fce4ec;
+  --ag-row-hover-color: #fafafa;
+  --ag-column-hover-color: #fafafa;
+  --ag-control-panel-background-color: #fafafa;
+  --ag-selected-row-background-color: #eee;
+  --ag-checkbox-unchecked-color: #333;
+  --ag-value-change-value-highlight-background-color: #00acc1;
+  --ag-side-button-selected-background-color: transparent;
+  --ag-range-selection-border-color: var(--ag-material-primary-color);
+  --ag-checkbox-checked-color: var(--ag-material-accent-color);
+  --ag-borders: none;
+  --ag-borders-critical: solid 1px;
+  --ag-border-color: #e2e2e2;
+  --ag-grid-size: 8px;
+  --ag-icon-size: 18px;
+  --ag-header-height: calc(var(--ag-grid-size) * 7);
+  --ag-row-height: calc(var(--ag-grid-size) * 6);
+  --ag-cell-horizontal-padding: calc(var(--ag-grid-size) * 3);
+  --ag-list-item-height: calc(var(--ag-grid-size) * 4);
+  --ag-row-group-indent-size: calc(var(--ag-grid-size) * 3 + var(--ag-icon-size));
+  --ag-filter-tool-panel-sub-level-row-height: calc(var(--ag-grid-size) * 4);
+  --ag-checkbox-border-radius: 2px;
+  --ag-toggle-button-switch-border-width: 2px;
+  --ag-toggle-button-height: var(--ag-icon-size);
+  --ag-widget-container-horizontal-padding: calc(var(--ag-grid-size) * 1.5);
+  --ag-widget-container-vertical-padding: calc(var(--ag-grid-size) * 2);
+  --ag-widget-vertical-spacing: calc(var(--ag-grid-size) * 1.75);
+  --ag-font-family: "Manrope", Arial, sans-serif;
+  --ag-font-size: 13px;
+  --ag-icon-font-family: agGridMaterial;
+  --ag-selected-tab-underline-color: var(--ag-material-primary-color);
+  --ag-selected-tab-underline-width: 2px;
+  --ag-input-focus-border-color: var(--ag-material-primary-color);
+  --ag-input-focus-box-shadow: 0 0 0 5px rgba(32, 33, 36, 0.122);
+  --ag-card-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  --ag-card-radius: 2px;
+  --ag-invalid-color: #e02525;
+}
+
+.light-title {
+  color: #585757;
+  font-size: 0.9rem;
+}
+
+.bold-title {
+  color: #2a2a2a;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #84191b;
+}
+
+.nav-link {
+  color: #84191b;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #84191b;
+  font-weight: 600;
+}
+
+.statistics .card {
+  border-radius: 0.25rem;
+}
+
+.statistics-details .rate-percentage {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 36px;
+  color: #414143;
+  margin-bottom: 5px;
+}
+
+.statistics .s1 {
+  background: -webkit-gradient(linear, left top, right top, from(#ffbf96), to(#fe7096)) !important;
+  background: linear-gradient(to right, #ffbf96, #fe7096) !important;
+}
+
+.statistics .s2 {
+  background: -webkit-gradient(linear, left top, right top, from(#8ac9fd), color-stop(99%, #047edf)) !important;
+  background: linear-gradient(to right, #8ac9fd, #047edf 99%) !important;
+}
+
+.statistics .s3 {
+  background: -webkit-gradient(linear, left top, right top, from(#84d9d2), to(#0d9f88)) !important;
+  background: linear-gradient(to right, #84d9d2, #0d9f88) !important;
+}
+
+.statistics .s4 {
+  background: -webkit-gradient(linear, left top, right top, from(#7ba2e6), to(#2b3467)) !important;
+  background: linear-gradient(to right, #7ba2e6, #2b3467) !important;
+}
+
+.statistics h4 {
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #393939;
+}
+
+.sm-title {
+  font-size: 1rem;
+  font-weight: 500;
+  height: 50px;
+}
+
+.statistics .card-img-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  filter: none;
+}
